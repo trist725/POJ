@@ -1,0 +1,115 @@
+// 1017 Packets
+
+#include<stdio.h>
+
+int main()
+{
+	int packet[7];
+	while(true)
+	{
+		int count=0;
+		for(int i=1;i<=6;i++)
+		{
+			scanf("%d",&packet[i]);
+			count+=packet[i];
+		}
+		if(count==0)
+		{
+			break;
+		}
+		int total=packet[6];
+		while(packet[5]>0)
+		{
+			packet[5]--;
+			packet[1]-=11;
+			total++;
+		}
+		while(packet[4]>0)
+		{
+			packet[4]--;
+			if(packet[2]>0)
+			{
+				if(packet[2]>=5)
+				{
+					packet[2]-=5;
+				}
+				else
+				{
+					packet[1]-=20-packet[2]*2;
+					packet[2]=0;
+				}
+			}
+			else
+			{
+				packet[1]-=20;
+			}
+			total++;
+		}
+		total+=packet[3]/4;
+		packet[3]%=4;
+		if(packet[3]>0)
+		{
+			if(packet[3]==3)
+			{
+				if(packet[2]>0)
+				{
+					packet[2]--;
+					packet[1]-=5;
+				}
+				else
+				{
+					packet[1]-=9;
+				}
+			}
+			else
+			{
+				if(packet[3]==2)
+				{
+					if(packet[2]>=3)
+					{
+						packet[2]-=3;
+						packet[1]-=6;
+					}
+					else
+					{
+						packet[1]-=18-packet[2]*4;
+						packet[2]=0;
+					}
+				}
+				else
+				{
+					if(packet[3]==1)
+					{
+						if(packet[2]>=5)
+						{
+							packet[2]-=5;
+							packet[1]-=7;
+						}
+						else
+						{
+							packet[1]-=27-packet[2]*4;
+							packet[2]=0;
+						}
+					}
+				}
+			}
+			total++;
+		}
+		total+=packet[2]/9;
+		if(packet[2]%9>0)
+		{
+			total++;
+			packet[1]-=36-(packet[2]%9)*4;
+		}
+		if(packet[1]>0)
+		{
+			total+=packet[1]/36;
+			if(packet[1]%36>0)
+			{
+				total++;
+			}
+		}
+		printf("%d\n",total);
+	}
+	return 0;
+}

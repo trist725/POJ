@@ -1,0 +1,60 @@
+1000	A+B Problem	计算a+b	简单题
+1001	Exponentiation	高精度指数	大数乘法
+1002	487-3279	电话号码统计	数据结构
+1003	Hangover	计算伸出长度	简单计算
+1004	Financial Management	计算平均数	简单计算
+1005	I Think I Need a Houseboat	圆面积增长	简单几何
+1006	Biorhythms	余数问题	中国剩余定理
+1007	DNA Sorting	字符串排序	计算权值并排序
+1013	Counterfeit Dollar	称重找假币	统计出现状态及次数进行比较
+1014	Dividing	平分	取模简化背包DP
+1017	Packets	打包	贪心递推
+1018	Communication System	通信系统最优值	搜索优化
+1028	Web Navigation	网页浏览模拟	栈数据结构
+1065	Wooden Sticks	二维增长序列覆盖	以一维为主排序，然后贪心
+1067	取石子游戏	威佐夫博弈	根据公式判断
+1068	Parencodings	括号匹配	模拟
+1088	滑雪	矩形图最长下降路径	矩形图动态规划，带记忆
+1120	A New Growth Industry	细菌繁殖	模拟
+1125	Stockbroker Grapevine	信息传播最短时间	最短路径Floyd算法
+1159	Palindrome	增加最少字符成为回文	原串和反向串求最长公共子串
+1163	The Triangle	三角形最大路径和	简单动态规划
+1171	Letter Game	计算单词及单词组合最大得分	枚举模拟
+1182	食物链	判断动物间关系	关系树数据结构
+1274	The Perfect Stall	奶牛与牛栏配对	二分图最大匹配个数，匈牙利算法
+1308	Is It A Tree?	树判断	判断进入节点边是否唯一，注意判断分开的环和树
+1328	Radar Installation	最小雷达安装数	点集线段覆盖，贪心
+1458	Common Subsequence	最长公共子串数	最长公共子串
+1469	COURSES	选课匹配	二分图是否完全匹配判断，匈牙利算法
+1552	Doubles	统计双倍数	数组标记，枚举
+1573	Robot Motion	机器人走迷宫	简单矩形图模拟，带记忆
+1611	The Suspects	疑似传染者	并查集，森林实现
+1694	An Old Stone Game	树形放石头游戏	树形递归，模拟搜索
+1708	Game	跳子游戏	图广度优先搜索
+1719	Shooting Contest	射击比赛	二分图完全匹配，记录匹配关系，匈牙利算法
+1753	Flip Game	翻转游戏，翻转周围棋子，求最小翻转次数	模拟，广度优先搜索，位保存优化
+1887	Testing the CATCHER	导弹拦截	最长不上升子序列
+1964	City Game	最大矩形	二维图动态规划
+1979	Red and Black	连通范围	二维图广搜
+2000	Gold Coins	金币增长	简单数学模拟
+2027	No Brainer	巫师吃脑	简单数学
+2109	Power of Cryptography	求p^(1/n)	数学，使用double保存数值，pow函数求解
+2136	Vertical Histogram	字符统计直方图	字符统计，画图
+2141	Message Decowding	解密	简单转换
+2159	Ancient Cipher	古代密文匹配	字符统计匹配
+2190	ISBN	计算未知数	枚举计算
+2239	Selecting Courses	选课	二分图最大匹配个数，匈牙利算法
+2262	Goldbach's Conjecture	歌德巴赫猜想	标出范围内所有质数，枚举
+2385	Apple Catching	接苹果	动态规划搜索
+2386	Lake Counting	积水湖的个数	矩形图深度优先搜索，带记忆
+2479	Maximum sum	最大两个子序列和	动态规划，同时计算所有位置两边的最大子序列和，搜索最大和
+2484	A Funny Game	取物博弈	寻找必胜方法
+2521	How much did the businessman lose	计算盈亏	简单计算
+2586	Y2K Accounting Bug	两千年问题，求最大盈利	贪心
+2840	Big Clock	钟响次数	简单题
+2860	Block game with the Little Prince	移动方块	简单计算，求差值
+2965	The Pilots Brothers' refrigerator	解锁，每次翻转行和列，求最小翻转过程	简化问题，反向模拟即得到结果
+2993	Emag eht htiw Em Pleh	根据国际象棋棋子位置复原棋盘	简单模拟
+2996	Help Me with the Game	从国际象棋棋盘读取棋子位置	简单模拟
+3006	Dirichlet's Theorem on Arithmetic Progressions	质数理论，求递增序列第n个质数	标出范围内所有质数
+3278	Catch That Cow	抓奶牛，可瞬移，求最少步	广度优先搜索，带记忆
